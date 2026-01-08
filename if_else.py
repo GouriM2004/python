@@ -1,5 +1,5 @@
 a = int(input("Enter a number: "))
-if a > 18:
-    print("Adult")
+if a % 2 == 0:
+    print("Even")
 else:
-    print("Minor")
+    print("Odd")
