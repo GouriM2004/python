@@ -1,4 +1,4 @@
-
+# Method 1: Using a temporary variable
 a = 10
 b = 20
 
