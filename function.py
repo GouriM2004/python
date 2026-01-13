@@ -1,15 +1,11 @@
-def greet(name):
-    """A simple greeting function"""
-    return f"Hello, {name}!"
+def calculate_average(numbers):
+    """Calculate the average of a list of numbers."""
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
 
-def add(a, b):
-    """Add two numbers"""
-    return a + b
-
-def main():
-    """Main function"""
-    print(greet("World"))
-    print(f"5 + 3 = {add(5, 3)}")
-
+# Example usage
 if __name__ == "__main__":
-    main()
+    nums = [10, 20, 30, 40, 50]
+    avg = calculate_average(nums)
+    print(f"Average: {avg}")
