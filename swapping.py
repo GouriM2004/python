@@ -9,3 +9,4 @@ a = b
 b = temp
 
 print(f"After swap: a = {a}, b = {b}")
+print("End of the program")
