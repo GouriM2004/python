@@ -1,8 +1,13 @@
+import re
+import tkinter as tk
 
-a = int(input("Enter 1st number"))
-b = int(input("Enter 2nd number"))
-print(f"Before swap: a = {a}, b = {b}")
-temp = a
-a = b
-b = temp
-print(f"After swap: a = {a}, b = {b}")
+def validate_email():
+    email = entry.get()
+
+    # Email regex pattern
+    pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+
+    if re.match(pattern, email):
+        result_label.config(text="Valid Email ✅", fg="green")
+    else:
+        result_label.config(text="Invalid Email ❌", fg="red")
