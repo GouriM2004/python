@@ -36,10 +36,4 @@ tk.Label(window, text="Guess a number (1–100)", font=("Arial", 12)).pack(pady=
 entry = tk.Entry(window, width=25)
 entry.pack(pady=5)
 
-guess_button = tk.Button(window, text="Check Guess", command=check_guess)
-guess_button.pack(pady=15)
 
-result_label = tk.Label(window, text="", font=("Arial", 12, "bold"))
-result_label.pack(pady=10)
-
-window.mainloop()
