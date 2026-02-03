@@ -22,6 +22,15 @@ while True:
         else:
             print("Invalid amount!")
 
+    elif choice == "3":
+        amount = float(input("Enter amount to withdraw: ₹"))
+        if amount <= 0:
+            print("Invalid amount!")
+        elif amount > balance:
+            print("Insufficient balance!")
+        else:
+            balance -= amount
+            print(f"₹{amount} withdrawn successfully.")
 
     elif choice == "4":
         print("Thank you for using the ATM. Goodbye! 👋")
