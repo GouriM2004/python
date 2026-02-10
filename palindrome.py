@@ -1,12 +1,12 @@
-# Program to check whether a string is a palindrome
+n = int(input("Enter number: "))
+temp = n
+rev = 0
 
-text = input("Enter a string: ")
-rev = ""
+while temp > 0:
+    rev = rev * 10 + temp % 10
+    temp //= 10
 
-for ch in text:
-    rev = ch + rev
-
-if text == rev:
-    print("The string is a Palindrome")
+if rev == n:
+    print("Palindrome")
 else:
-    print("The string is NOT a Palindrome")
+    print("Not Palindrome")
