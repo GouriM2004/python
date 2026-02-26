@@ -32,9 +32,3 @@ while True:
             balance -= amount
             print(f"₹{amount} withdrawn successfully.")
 
-    elif choice == "4":
-        print("Thank you for using the ATM. Goodbye! 👋")
-        break
-
-    else:
-        print("Invalid choice. Please try again.")
