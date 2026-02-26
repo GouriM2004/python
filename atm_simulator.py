@@ -11,16 +11,7 @@ while True:
     show_menu()
     choice = input("Enter your choice (1-4): ")
 
-    if choice == "1":
-        print(f"Your current balance is: ₹{balance}")
 
-    elif choice == "2":
-        amount = float(input("Enter amount to deposit: ₹"))
-        if amount > 0:
-            balance += amount
-            print(f"₹{amount} deposited successfully.")
-        else:
-            print("Invalid amount!")
 
     elif choice == "3":
         amount = float(input("Enter amount to withdraw: ₹"))
