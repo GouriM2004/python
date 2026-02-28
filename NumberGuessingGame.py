@@ -18,6 +18,3 @@ while True:
         else:
             print(f"🎉 Correct! You guessed the number in {attempts} attempts.")
             break
-
-    except ValueError:
-        print("Please enter a valid number!")
