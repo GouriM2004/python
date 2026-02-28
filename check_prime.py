@@ -10,3 +10,9 @@ def is_prime(num):
     return True
 
 
+number = int(input("Enter a number: "))
+
+if is_prime(number):
+    print(number, "is a Prime Number")
+else:
+    print(number, "is NOT a Prime Number")
