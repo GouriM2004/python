@@ -6,4 +6,10 @@ class Person:
 		return "Hello, " + self.name
 
 
+def main():
+	p = Person("Alice")
+	print(p.greet())
 
+
+if __name__ == "__main__":
+	main()
