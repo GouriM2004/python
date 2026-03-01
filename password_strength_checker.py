@@ -30,4 +30,7 @@ def check_strength():
     result_label.config(text=result, fg=color)
 
 # -------- UI --------
-
+window = tk.Tk()
+window.title("Password Strength Checker")
+window.geometry("400x250")
+window.resizable(False, False)
