@@ -34,3 +34,15 @@ window = tk.Tk()
 window.title("Password Strength Checker")
 window.geometry("400x250")
 window.resizable(False, False)
+
+tk.Label(window, text="Enter Password", font=("Arial", 12)).pack(pady=10)
+
+entry = tk.Entry(window, width=30, show="*")
+entry.pack(pady=5)
+
+tk.Button(window, text="Check Strength", command=check_strength).pack(pady=15)
+
+result_label = tk.Label(window, text="", font=("Arial", 12, "bold"))
+result_label.pack(pady=10)
+
+window.mainloop()
