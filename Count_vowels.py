@@ -12,5 +12,3 @@ for ch in text:
         else:
             consonants += 1
 
-print("Number of vowels:", vowels)
-print("Number of consonants:", consonants)
